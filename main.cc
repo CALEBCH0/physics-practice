@@ -10,5 +10,5 @@ int main() {
   }
   Profile profile(current);
   profile.SetGoal(goal);
-  std::cout << profile.GetTime() << std::endl;
+  std::cout << profile.GetTime() << std::endl; 
 }

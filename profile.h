@@ -1,8 +1,8 @@
 #ifndef PROFILE_H_
 #define PROFILE_H_
 
-constexpr kMaxVelocity = 1.0;
-constexpr kMaxAcceleration = 1.0;
+constexpr double kMaxVelocity = 1.0;
+constexpr double kMaxAcceleration = 1.0;
 
 class Profile {
 public:
@@ -10,6 +10,8 @@ public:
     double position = 0.0;
     double velocity = 0.0;
   };
+  ProfilePoint points;
+  
   Profile(ProfilePoint current) {
     current_ = current;
   }
